@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.table {
+	width: 100%;
+	.header,
+	.rows {
+		display: flex;
+		padding: 10px 8px;
+		border-bottom: 1px solid $darkGrey;
+		border-top: 1px solid $darkGrey;
+		&:hover {
+			background-color: $lightGrey;
+		}
+		&:nth-child(1) {
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		.row {
+			flex: 1;
+
+			&:nth-child(1) {
+				flex-basis: 50px;
+				flex-grow: 0;
+				flex-shrink: 0;
+				// border-left: 1px solid;
+			}
+		}
+	}
+}

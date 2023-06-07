@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+
+.button {
+	font-size: 18px;
+	background-color: $blue;
+	height: 36px;
+	padding: 7px 15px;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+	border-radius: 20px;
+	border: 1px solid $blue;
+	cursor: pointer;
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: $white;
+		color: $blue;
+	}
+}

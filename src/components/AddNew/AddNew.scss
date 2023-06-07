@@ -1,0 +1,54 @@
+@import "../../styles/colors.scss";
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.addnew {
+	height: auto;
+	padding: 16px;
+	margin: auto;
+	gap: 16px 0;
+	display: flex;
+	flex-direction: column;
+	background-color: $darkGrey;
+	border-radius: 4px;
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 16px 0;
+
+		.row-1 {
+			display: flex;
+			gap: 0 16px;
+			align-items: center;
+
+			label {
+				width: 140px;
+			}
+		}
+	}
+
+	.buttonContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0 20px;
+		.cancel {
+			background-color: $white;
+			color: $blue;
+		}
+		.button {
+			width: 100px;
+		}
+	}
+}
